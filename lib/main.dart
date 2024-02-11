@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:food_gram_web/component/app_contents.dart';
 import 'package:food_gram_web/component/app_footer.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 void main() {
   runApp(const MyApp());
@@ -43,8 +44,9 @@ class HomeScreen extends StatelessWidget {
               spacing: 100,
               children: [
                 GestureDetector(
-                  onTap: () {
-                    //TODO アプリのURLを載せる。
+                  onTap: () async {
+                    launchUrl(Uri.parse(
+                        'https://apps.apple.com/vn/app/foodgram/id6474065183'));
                   },
                   child: SvgPicture.asset(
                     'assets/images/app_download.svg',
