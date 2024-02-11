@@ -68,7 +68,7 @@ class HomeScreen extends StatelessWidget {
                 ),
                 AppContents(
                   icon: Icons.check_circle_outline,
-                  title: '世界中の食べ物を知ろう',
+                  title: '世界中の食べ物を知ろう!',
                   subTitle: 'このアプリで様々な人の美味しいものを知ろう\n'
                       '新しい食事の発見にもつながるかもしれません。',
                   image: 'assets/images/food2.png',
