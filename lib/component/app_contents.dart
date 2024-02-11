@@ -51,7 +51,7 @@ class AppContents extends StatelessWidget {
           image,
           width: 200,
         ),
-        SizedBox(height: 100),
+        const SizedBox(height: 100),
       ],
     );
   }
